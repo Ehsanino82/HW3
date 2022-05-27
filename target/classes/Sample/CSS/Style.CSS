@@ -1,0 +1,21 @@
+Button{
+    -fx-border-radius: 20;
+    -fx-border-color: #412100;
+    -fx-background-color: #e76a04;
+    -fx-background-radius: 20;
+    -fx-border-width: 2;
+}
+
+TextField{
+    -fx-border-radius: 20;
+    -fx-border-color: #00382e;
+    -fx-border-width: 2;
+    -fx-background-color: #639fbb;
+    -fx-background-radius: 20;
+}
+
+.endGameBackground{
+    -fx-background-image: url(../pictures/Backgrounds/image.png);
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: 900px 600px;
+}

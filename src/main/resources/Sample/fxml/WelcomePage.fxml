@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/11" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Sample.View.WelcomePageController">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="71.0" layoutY="121.0" prefHeight="43.0" prefWidth="219.0" text="Login &amp; Registration">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="username" alignment="CENTER" layoutX="67.0" layoutY="196.0" onKeyPressed="#changeVisibility" promptText="Username">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </TextField>
+      <TextField fx:id="password" alignment="CENTER" layoutX="67.0" layoutY="249.0" onKeyPressed="#changeVisibility" promptText="Password">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </TextField>
+      <Button fx:id="register" disable="true" layoutX="206.0" layoutY="355.0" mnemonicParsing="false" onMouseClicked="#registerUser" prefHeight="40.0" prefWidth="150.0" stylesheets="@../CSS/Style.CSS" text="Register">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="login" disable="true" layoutX="14.0" layoutY="355.0" mnemonicParsing="false" onMouseClicked="#loginUser" prefHeight="40.0" prefWidth="150.0" text="Login">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label fx:id="invalidRegister" layoutX="81.0" layoutY="311.0" prefHeight="27.0" prefWidth="200.0" text="Username is used before" textFill="RED" visible="false">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label fx:id="invalidLogin" layoutX="28.0" layoutY="311.0" prefHeight="27.0" prefWidth="306.0" text="Username and Password didn't match" textFill="RED" visible="false">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="guest" layoutX="56.0" layoutY="444.0" mnemonicParsing="false" onMouseClicked="#loginAsGuest" prefHeight="40.0" prefWidth="250.0" text="Play as a Guest">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+   <stylesheets>
+      <URL value="@../CSS/Style.CSS" />
+      <URL value="@../CSS/Welcome.CSS" />
+   </stylesheets>
+</AnchorPane>

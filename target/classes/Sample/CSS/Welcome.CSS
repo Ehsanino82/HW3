@@ -1,0 +1,5 @@
+AnchorPane{
+    -fx-background-image: url(../pictures/Backgrounds/WelcomeBackground.jpg);
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: 900px 600px;
+}
